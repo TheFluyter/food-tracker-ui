@@ -8,7 +8,7 @@ const UserConsumption = () => {
 
     const fetchUserConsumptions = async () => {
         try {
-            const response = await axios.get('/api/consumption?date=2024-08-01');
+            const response = await axios.get('/api/consumption?date=2024-09-22');
             setConsumptions(response.data);
         } catch (err) {
             setError('Error fetching data');
