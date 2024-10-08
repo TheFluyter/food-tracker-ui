@@ -35,6 +35,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "proxy": "https://food-tracker-backend-eu-west-fjdfa7dre3g0bbgj.westeurope-01.azurewebsites.net"
+  }
 }
