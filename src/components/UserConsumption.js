@@ -8,7 +8,8 @@ const UserConsumption = () => {
 
     const fetchUserConsumptions = async () => {
         try {
-            const response = await axios.get('https://food-tracker-backend-eu-west-fjdfa7dre3g0bbgj.westeurope-01.azurewebsites.net/api/consumption?date=2024-10-08');
+            const baseUrl = process.env.REACT_APP_FOOD_TRACKER_API_BASE_URL;
+            const response = await axios.get(`${baseUrl}/api/consumption?date=2024-10-20`);
             setConsumptions(response.data);
         } catch (err) {
             setError('Error fetching data');
